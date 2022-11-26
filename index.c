@@ -2,6 +2,7 @@
 
 int subtraction (int num1, int num2);
 int multiplication (int num1, int num2);
+int addition (int num1, int num2);
 
 int main()
 {
@@ -24,6 +25,7 @@ int main()
       {
          case 1:
             printf("Addition\n");
+            printf("The addition of %i and %i is: %i", value1, value2, addition(value1, value2));
             break;
          case 2:
             printf("Subtraction\n");
@@ -45,6 +47,10 @@ int main()
       printf("\n\n");
    } while (choice != 0);
    return 0;
+}
+
+int addition (int num1, int num2){
+   return num1 + num2;
 }
 
 int subtraction (int num1, int num2){
