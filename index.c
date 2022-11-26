@@ -2,6 +2,7 @@
 
 int subtraction (int num1, int num2);
 int multiplication (int num1, int num2);
+int division (int num1, int num2);
 int addition (int num1, int num2);
 
 int main()
@@ -37,6 +38,7 @@ int main()
             break;
          case 4:
             printf("Division\n");
+            printf("The number %i divided by %i is: %i", value1, value2, division(value1, value2));
             break;
          case 0:
             printf("Thank you for using our calculator\n");
@@ -59,4 +61,8 @@ int subtraction (int num1, int num2){
 
 int multiplication (int num1, int num2){
     return num1 * num2;
+}
+
+int division (int num1, int num2){
+    return num1 / num2;
 }
