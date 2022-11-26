@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int subtraction (int num1, int num2);
+int multiplication (int num1, int num2);
 
 int main()
 {
@@ -30,6 +31,7 @@ int main()
             break;
          case 3:
             printf("Multiplication\n");
+            printf("The number %i times %i is: %i", value1, value2, multiplication(value1, value2));
             break;
          case 4:
             printf("Division\n");
@@ -47,4 +49,8 @@ int main()
 
 int subtraction (int num1, int num2){
     return num1 - num2;
+}
+
+int multiplication (int num1, int num2){
+    return num1 * num2;
 }
