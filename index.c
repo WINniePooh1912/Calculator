@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+int subtraction (int num1, int num2);
+
 int main()
 {
    int choice, value1, value2;
@@ -24,6 +26,7 @@ int main()
             break;
          case 2:
             printf("Subtraction\n");
+            printf("The subtraction of %i and %i is: %i", value1, value2, subtraction(value1, value2));
             break;
          case 3:
             printf("Multiplication\n");
@@ -40,4 +43,8 @@ int main()
       printf("\n\n");
    } while (choice != 0);
    return 0;
+}
+
+int subtraction (int num1, int num2){
+    return num1 - num2;
 }
