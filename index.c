@@ -18,10 +18,13 @@ int main()
       printf("0. Exit\n");
       printf("Enter your choice: ");
       scanf("%i", &choice);
-      printf("Please enter the first value: ");
-      scanf("%i", &value1);
-      printf("Please enter the second value: ");
-      scanf("%i", &value2);
+      if (choice != 0)
+      {
+         printf("Please enter the first value: ");
+         scanf("%i", &value1);
+         printf("Please enter the second value: ");
+         scanf("%i", &value2);
+      }
       switch(choice)
       {
          case 1:
